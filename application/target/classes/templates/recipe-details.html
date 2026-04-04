@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${recipe.title}"></title>
+    <link th:href="@{/styles/recipe-details.css}" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="recipe-details-container">
+
+    <div class="recipe-details-card">
+
+        <!-- Кнопки редактирования и удаления -->
+        <div class="card-actions">
+            <a class="edit-btn" th:href="@{/recipes/{id}/edit(id=${recipe.id})}">Edit</a>
+            <a class="delete-btn" th:href="@{/recipes/{id}/delete(id=${recipe.id})}">Delete</a>
+        </div>
+
+        <img class="recipe-details-image"
+             th:src="${recipe.imageUrl}"
+             alt="Recipe image"/>
+
+        <h1 class="recipe-title" th:text="${recipe.title}"></h1>
+
+        <p class="description" th:text="${recipe.description}"></p>
+
+        <p class="time">
+            ⏱ Cooking time:
+            <span th:text="${recipe.cookingTime}"></span> min
+        </p>
+
+        <div class="section">
+            <h2>🧂 Ingredients</h2>
+            <ul>
+                <li th:each="ingredient : ${recipe.ingredients}" th:text="${ingredient}"></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>👨‍🍳 Steps</h2>
+            <ol>
+                <li th:each="step : ${recipe.steps}" th:text="${step}"></li>
+            </ol>
+        </div>
+
+        <a href="/" class="back-button">← Back to recipes</a>
+    </div>
+
+</div>
+
+</body>
+</html>

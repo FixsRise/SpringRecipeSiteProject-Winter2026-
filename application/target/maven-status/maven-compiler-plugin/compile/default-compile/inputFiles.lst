@@ -1,0 +1,11 @@
+/home/ec2-user/environment/cacba2025-final-project-FixsRise/application/src/main/java/com/testproject/recipesite/RecipesiteApplication.java
+/home/ec2-user/environment/cacba2025-final-project-FixsRise/application/src/main/java/com/testproject/recipesite/config/DataInitializer.java
+/home/ec2-user/environment/cacba2025-final-project-FixsRise/application/src/main/java/com/testproject/recipesite/config/S3Config.java
+/home/ec2-user/environment/cacba2025-final-project-FixsRise/application/src/main/java/com/testproject/recipesite/config/S3TestRunner.java
+/home/ec2-user/environment/cacba2025-final-project-FixsRise/application/src/main/java/com/testproject/recipesite/controllers/HomeController.java
+/home/ec2-user/environment/cacba2025-final-project-FixsRise/application/src/main/java/com/testproject/recipesite/controllers/RecipeController.java
+/home/ec2-user/environment/cacba2025-final-project-FixsRise/application/src/main/java/com/testproject/recipesite/models/Recipe.java
+/home/ec2-user/environment/cacba2025-final-project-FixsRise/application/src/main/java/com/testproject/recipesite/models/User.java
+/home/ec2-user/environment/cacba2025-final-project-FixsRise/application/src/main/java/com/testproject/recipesite/repositories/RecipeRepository.java
+/home/ec2-user/environment/cacba2025-final-project-FixsRise/application/src/main/java/com/testproject/recipesite/services/RecipeService.java
+/home/ec2-user/environment/cacba2025-final-project-FixsRise/application/src/main/java/com/testproject/recipesite/services/S3Service.java

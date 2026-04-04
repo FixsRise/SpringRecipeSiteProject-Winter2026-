@@ -1,0 +1,11 @@
+com/testproject/recipesite/RecipesiteApplication.class
+com/testproject/recipesite/config/S3TestRunner.class
+com/testproject/recipesite/config/S3Config.class
+com/testproject/recipesite/models/User.class
+com/testproject/recipesite/repositories/RecipeRepository.class
+com/testproject/recipesite/controllers/RecipeController.class
+com/testproject/recipesite/config/DataInitializer.class
+com/testproject/recipesite/services/RecipeService.class
+com/testproject/recipesite/controllers/HomeController.class
+com/testproject/recipesite/models/Recipe.class
+com/testproject/recipesite/services/S3Service.class
