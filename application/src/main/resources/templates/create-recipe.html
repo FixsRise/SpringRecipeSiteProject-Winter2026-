@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Recipe</title>
+    <link th:href="@{/styles/create-recipe.css}" rel="stylesheet"/>
+</head>
+<body>
+
+<h1 class="page-title">➕ Create New Recipe</h1>
+
+<div class="form-container">
+    <form class="recipe-form"
+          th:action="@{/recipes/save}"
+          th:object="${recipe}"
+          method="post"
+          enctype="multipart/form-data">
+
+        <label for="title">Title</label>
+        <input type="text" id="title" th:field="*{title}" required/>
+
+        <label for="description">Description</label>
+        <textarea id="description" th:field="*{description}" rows="4"></textarea>
+
+        <label for="image">Recipe Image</label>
+        <input type="file"
+               id="image"
+               name="image"
+               accept="image/*"
+               required />
+
+        <img id="preview"
+             style="display:none; max-width: 200px; margin-top: 10px;" />
+
+        <label for="cookingTime">Cooking Time (minutes)</label>
+        <input type="number" id="cookingTime" th:field="*{cookingTime}"/>
+
+        <label for="ingredientsText">Ingredients (one per line)</label>
+        <textarea id="ingredientsText" name="ingredientsText" rows="5"></textarea>
+
+        <label for="stepsText">Steps (one per line)</label>
+        <textarea id="stepsText" name="stepsText" rows="5"></textarea>
+
+        <div class="form-buttons">
+            <button type="submit" class="submit-btn">Create Recipe</button>
+            <a href="/" class="back-button">← Back to recipes</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
